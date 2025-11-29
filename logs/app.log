@@ -1,0 +1,179 @@
+2025-11-28 22:51:43,167 INFO [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-28 22:51:43,167 INFO [werkzeug] [33mPress CTRL+C to quit[0m
+2025-11-28 22:51:43,168 INFO [werkzeug]  * Restarting with stat
+2025-11-28 22:51:43,582 WARNING [werkzeug]  * Debugger is active!
+2025-11-28 22:51:43,584 INFO [werkzeug]  * Debugger PIN: 134-979-206
+2025-11-28 22:51:43,605 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:51:43] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-28 22:51:43,613 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:51:43] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:52:06,952 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:06] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-28 22:52:06,959 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:06] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:52:08,873 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:08] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:52:09,825 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:09] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:52:10,063 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:10] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:52:12,335 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:12] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-28 22:52:12,354 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:12] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:52:37,967 WARNING [selenium_crud_app] Login fallido: josephcantebrito@gmail.com
+2025-11-28 22:52:37,967 ERROR [selenium_crud_app] Email o contraseña incorrectos
+2025-11-28 22:52:37,967 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:37] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:52:44,325 WARNING [selenium_crud_app] Login fallido: admin@example.com
+2025-11-28 22:52:44,325 ERROR [selenium_crud_app] Email o contraseña incorrectos
+2025-11-28 22:52:44,325 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:44] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:52:58,816 INFO [selenium_crud_app] Login exitoso: admin@example.com
+2025-11-28 22:52:58,816 INFO [selenium_crud_app] Inicio de sesión exitoso
+2025-11-28 22:52:58,817 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-28 22:52:58,825 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:52:58] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:53:03,735 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:53:03] "GET /students/create HTTP/1.1" 200 -
+2025-11-28 22:53:32,518 DEBUG [selenium_crud_app] POST /students/create data: nombre=Joseph Luis Cante Brito edad=21 curso=Programacion III email=josephcantebrito@gmail.com
+2025-11-28 22:53:32,522 INFO [selenium_crud_app] Estudiante creado: Joseph Luis Cante Brito (josephcantebrito@gmail.com)
+2025-11-28 22:53:32,522 INFO [selenium_crud_app] Estudiante creado correctamente
+2025-11-28 22:53:32,523 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:53:32] "[32mPOST /students/create HTTP/1.1[0m" 302 -
+2025-11-28 22:53:32,531 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:53:32] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:53:35,708 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:53:35] "GET /students/create HTTP/1.1" 200 -
+2025-11-28 22:53:58,407 DEBUG [selenium_crud_app] POST /students/create data: nombre=Emilio bobadilla edad=23 curso=Diseño centrado en el usuario  email=admin@example.com
+2025-11-28 22:53:58,410 INFO [selenium_crud_app] Estudiante creado: Emilio bobadilla (admin@example.com)
+2025-11-28 22:53:58,410 INFO [selenium_crud_app] Estudiante creado correctamente
+2025-11-28 22:53:58,411 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:53:58] "[32mPOST /students/create HTTP/1.1[0m" 302 -
+2025-11-28 22:53:58,415 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:53:58] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:54:00,565 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:54:00] "GET /students/edit/1 HTTP/1.1" 200 -
+2025-11-28 22:54:15,941 DEBUG [selenium_crud_app] POST /students/edit/1 data: ImmutableMultiDict([('nombre', 'Joseph Luis Cante Brito'), ('edad', '22'), ('curso', 'Laboratorio de fisica '), ('email', 'josephcantebrito@gmail.com')])
+2025-11-28 22:54:15,946 INFO [selenium_crud_app] Estudiante actualizado id=1 nombre=Joseph Luis Cante Brito
+2025-11-28 22:54:15,946 INFO [selenium_crud_app] Estudiante actualizado
+2025-11-28 22:54:15,946 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:54:15] "[32mPOST /students/edit/1 HTTP/1.1[0m" 302 -
+2025-11-28 22:54:15,950 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:54:15] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:54:19,618 INFO [selenium_crud_app] Estudiante eliminado id=1 nombre=Joseph Luis Cante Brito
+2025-11-28 22:54:19,618 INFO [selenium_crud_app] Estudiante eliminado
+2025-11-28 22:54:19,618 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:54:19] "[32mPOST /students/delete/1 HTTP/1.1[0m" 302 -
+2025-11-28 22:54:19,623 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:54:19] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:54:31,325 INFO [selenium_crud_app] Usuario 1 cerró sesión
+2025-11-28 22:54:31,326 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:54:31] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-11-28 22:54:31,337 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:54:31] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:56:48,012 INFO [werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-28 22:56:48,012 INFO [werkzeug] [33mPress CTRL+C to quit[0m
+2025-11-28 22:56:48,013 INFO [werkzeug]  * Restarting with stat
+2025-11-28 22:56:48,436 WARNING [werkzeug]  * Debugger is active!
+2025-11-28 22:56:48,438 INFO [werkzeug]  * Debugger PIN: 134-979-206
+2025-11-28 22:56:48,456 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:56:48] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-28 22:56:48,462 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:56:48] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:56:54,255 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:56:54] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-28 22:56:54,260 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:56:54] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:56:55,470 ERROR [selenium_crud_app] Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-11-28 22:56:55,473 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:56:55] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-11-28 22:56:55,477 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:56:55] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:57:00,472 WARNING [selenium_crud_app] Login fallido: josephcantebrito@gmail.com
+2025-11-28 22:57:00,472 ERROR [selenium_crud_app] Email o contraseña incorrectos
+2025-11-28 22:57:00,472 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:00] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:57:00,530 ERROR [selenium_crud_app] Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-11-28 22:57:00,531 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:00] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-11-28 22:57:00,534 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:00] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:57:06,956 WARNING [selenium_crud_app] Login fallido: admin@example.com 
+2025-11-28 22:57:06,956 ERROR [selenium_crud_app] Email o contraseña incorrectos
+2025-11-28 22:57:06,957 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:06] "POST /login HTTP/1.1" 200 -
+2025-11-28 22:57:07,011 ERROR [selenium_crud_app] Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-11-28 22:57:07,012 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:07] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-11-28 22:57:07,015 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:07] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:57:13,547 INFO [selenium_crud_app] Login exitoso: admin@example.com
+2025-11-28 22:57:13,547 INFO [selenium_crud_app] Inicio de sesión exitoso
+2025-11-28 22:57:13,547 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-11-28 22:57:13,555 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:13] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:57:13,615 ERROR [selenium_crud_app] Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-11-28 22:57:13,616 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-11-28 22:57:13,620 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:13] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:57:15,304 INFO [selenium_crud_app] Estudiante eliminado id=2 nombre=Emilio bobadilla
+2025-11-28 22:57:15,304 INFO [selenium_crud_app] Estudiante eliminado
+2025-11-28 22:57:15,304 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:15] "[32mPOST /students/delete/2 HTTP/1.1[0m" 302 -
+2025-11-28 22:57:15,309 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:15] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:57:15,366 ERROR [selenium_crud_app] Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-11-28 22:57:15,367 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:15] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-11-28 22:57:15,370 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:15] "GET /students HTTP/1.1" 200 -
+2025-11-28 22:57:16,450 INFO [selenium_crud_app] Usuario 1 cerró sesión
+2025-11-28 22:57:16,451 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-11-28 22:57:16,455 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:16] "GET /login HTTP/1.1" 200 -
+2025-11-28 22:57:16,513 ERROR [selenium_crud_app] Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1458, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\app.py", line 1440, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\josep\OneDrive\Escritorio\selenium-tarea4\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-11-28 22:57:16,514 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:16] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2025-11-28 22:57:16,517 INFO [werkzeug] 127.0.0.1 - - [28/Nov/2025 22:57:16] "GET /login HTTP/1.1" 200 -
