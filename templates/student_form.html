@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Formulario Estudiante{% endblock %}
+{% block body %}
+<h2>{{ 'Editar Estudiante' if student else 'Crear Estudiante' }}</h2>
+<form method="post" id="student-form">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input id="nombre" name="nombre" class="form-control" value="{{ student.nombre if student else '' }}" required>
+  </div>
+  <div class="mb-3">
+    <label for="edad" class="form-label">Edad</label>
+    <input id="edad" name="edad" type="number" class="form-control" value="{{ student.edad if student else '' }}" required>
+  </div>
+  <div class="mb-3">
+    <label for="curso" class="form-label">Curso</label>
+    <input id="curso" name="curso" class="form-control" value="{{ student.curso if student else '' }}" required>
+  </div>
+  <div class="mb-3">
+    <label for="student-email" class="form-label">Email</label>
+    <input id="student-email" name="email" type="email" class="form-control" value="{{ student.email if student else '' }}" required>
+  </div>
+  <button id="save-btn" type="submit" class="btn btn-primary">Guardar</button>
+  <a id="cancel-btn" href="{{ url_for('students') }}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

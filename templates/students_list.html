@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}Estudiantes{% endblock %}
+{% block body %}
+<div class="d-flex justify-content-between align-items-center">
+  <h2>Estudiantes</h2>
+  <div>
+    <a id="create-btn" class="btn btn-success" href="{{ url_for('create_student') }}">Crear Estudiante</a>
+    <a id="logout-btn" class="btn btn-secondary" href="{{ url_for('logout') }}">Cerrar sesión</a>
+  </div>
+</div>
+<table class="table mt-3" id="students-table">
+  <thead>
+    <tr><th>Nombre</th><th>Edad</th><th>Curso</th><th>Email</th><th>Acciones</th></tr>
+  </thead>
+  <tbody>
+    {% for s in students %}
+    <tr id="student-{{ s.id }}">
+      <td class="student-nombre">{{ s.nombre }}</td>
+      <td class="student-edad">{{ s.edad }}</td>
+      <td class="student-curso">{{ s.curso }}</td>
+      <td class="student-email">{{ s.email }}</td>
+      <td>
+        <a id="edit-{{ s.id }}" class="btn btn-sm btn-primary" href="{{ url_for('edit_student', id=s.id) }}">Editar</a>
+        <form id="delete-form-{{ s.id }}" method="post" action="{{ url_for('delete_student', id=s.id) }}" style="display:inline;">
+          <button id="delete-{{ s.id }}" type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
